@@ -13,10 +13,13 @@ after_script:
   - test -z "$MUTANT" || bundle exec mutant --include lib --require bashcov --use rspec 'Bashcov*'
 os:
   - linux
+  - osx
 rvm:
   - 2.6.2
   - 2.5.5
   - 2.4.5
+  - ruby-head
+  - rbx-2
 env:
   matrix:
     - INSTALL_BASH_VERSION=5.0
@@ -25,19 +28,10 @@ env:
     - INSTALL_BASH_VERSION=4.2
     - INSTALL_BASH_VERSION=4.1
     - INSTALL_BASH_VERSION=4.0
+    - INSTALL_BASH_VERSION=3.2
+    - INSTALL_BASH_VERSION=3.1
+    - INSTALL_BASH_VERSION=3.0
 matrix:
-  include:
-    - rvm: ruby-head
-      env: INSTALL_BASH_VERSION=
-    - rvm: rbx-2
-      env: INSTALL_BASH_VERSION=
-    - rvm: 2.6.2
-      os: osx
-      env: INSTALL_BASH_VERSION=
-    - rvm: 2.6.2
-      env: INSTALL_BASH_VERSION=
-    - rvm: 2.6.2
-      env: INSTALL_BASH_VERSION= MUTANT=1
   allow_failures:
     - os: osx
     - rvm: ruby-head
