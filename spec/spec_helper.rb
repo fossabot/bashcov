@@ -1,9 +1,14 @@
 # frozen_string_literal: true
 
 require "simplecov"
+require "simplecov_json_formatter"
 require "coveralls"
 
-formatters = [SimpleCov::Formatter::HTMLFormatter, Coveralls::SimpleCov::Formatter]
+formatters = [
+  SimpleCov::Formatter::HTMLFormatter,
+  SimpleCov::Formatter::JSONFormatter,
+  Coveralls::SimpleCov::Formatter,
+]
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(formatters)
 
 require "bashcov"
