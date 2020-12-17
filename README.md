@@ -5,6 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/infertux/bashcov/badge.svg?branch=master)](https://coveralls.io/r/infertux/bashcov)
 [![Maintainability](https://api.codeclimate.com/v1/badges/083fdbba795049cd5f06/maintainability)](https://codeclimate.com/github/infertux/bashcov/maintainability)
 [![Inline docs](http://inch-ci.org/github/infertux/bashcov.svg)](http://inch-ci.org/github/infertux/bashcov)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fbashcov.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fbashcov?ref=badge_shield)
 
 Bashcov is a **code coverage analysis tool for Bash**.
 
@@ -58,3 +59,6 @@ See the [contribution guidelines](https://github.com/infertux/bashcov/blob/maste
 ## License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fbashcov.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fbashcov?ref=badge_large)
